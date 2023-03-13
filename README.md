@@ -2,7 +2,7 @@
 
 Flic Hub has an SDK, which you can access sitting on your local network and accessing the url:
 
-https://hubsdk.flic.io/ 66
+https://hubsdk.flic.io/
 
 In there, login and click on “Create Module” and give it a name (whichever you want), go to main.js and paste the code below. From here onwards, modify only what is in [SQUARE BRACKETS AND CAPS]
 
