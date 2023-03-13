@@ -1,5 +1,4 @@
-# FlicHub-SDK-HA-WebHooks
- Flic Hub (Flic buttons) integration using Flic Hub SDK and HA binary sensors/automations
+# Flic Hub (Flic buttons) integration using Flic Hub SDK and Home Assistant binary sensors/automations
 
 Flic Hub has an SDK, which you can access sitting on your local network and accessing the url:
 
