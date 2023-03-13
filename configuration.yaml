@@ -1,0 +1,15 @@
+# This is not a complete configuration.yaml file
+# please use it only to copy/paste its contents to your own
+template:
+  - trigger:
+      - platform: webhook
+        webhook_id: [NAME OF YOUR WEBHOOK]-[NAME OF YOUR BUTTON]
+
+    binary_sensor:
+      - unique_id: "[NAME OF YOUR BUTTON]_button"
+        name: "[NAME OF YOUR BUTTON] Button"
+        state: "on"
+        auto_off: 0.1
+        attributes:
+          click-type: "{{ trigger.json.click_type }}"
+          battery: "{{ trigger.json.battery_status }}"

@@ -1,0 +1,17 @@
+- id: '[UNIQUE ID SO YOU CAN EDIT FROM THE UI IF YOU WISH TO]'
+  alias: [NAME OF YOUR AUTOMATION]
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.[NAME OF YOUR BUTTON]_button
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.[NAME OF YOUR BUTTON]_button
+    attribute: click-type
+    state: [POSSIBLE VALUES ARE: click, double_click, hold]
+  action:
+  - [YOUR ACTION, TURN OFF THE TV, PLAY MUSIC, CLOSE THE FRONT DOOR, ETC]
+  mode: single
