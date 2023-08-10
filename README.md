@@ -14,7 +14,7 @@ var url = "http://[LOCAL IP OF YOUR HA INSTANCE]:8123/api/webhook/[NAME OF YOUR 
 
 buttonManager.on("buttonSingleOrDoubleClickOrHold", function(obj) {
 	var button = buttonManager.getButton(obj.bdaddr);
-	var clickType = obj.isSingleClick ? "click" : obj.isDoubleClick ? "double-click" : "hold";
+	var clickType = obj.isSingleClick ? "click" : obj.isDoubleClick ? "double_click" : "hold";
 
 	http.makeRequest({
 		url: url + button.name,
